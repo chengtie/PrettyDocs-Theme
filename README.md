@@ -72,3 +72,5 @@ If you'd like to **use the template without the footer attribution**, you can [b
 - [PrismJS](http://prismjs.com/)
 - [jQuery ScrollTo](http://flesler.blogspot.co.uk/2007/10/jqueryscrollto.html)
 - [Stickyfill](https://github.com/wilddeer/stickyfill)
+
+./git.sh m="a commit message"

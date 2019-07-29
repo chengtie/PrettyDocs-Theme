@@ -1454,4 +1454,31 @@ select {
   .main-search-box .search-form .search-input {
     width: 560px;
   }
+} 
+
+.doc-menu-switch {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .doc-menu {
+    height: 100vh;
+    width: 50%;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+  }
+
+  .doc-menu-switch {
+    display: block;
+  }
+
+  .doc-menu-switch-on {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+  }
 }

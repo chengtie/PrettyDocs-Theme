@@ -238,9 +238,11 @@ select {
 
 /* ====== Header ====== */
 .header {
+  width: 100%;
   background: #494d55;
   color: rgba(255, 255, 255, 0.85);
   border-top: 5px solid #40babd;
+  position: fixed;
   padding: 30px 0;
   z-index: 100;
   display: flex;
@@ -1505,7 +1507,7 @@ select {
     z-index: 100;
     height: calc(100% - 129px);
     background: #fff;
-    overflow-y: auto;
+    overflow-y: scroll;
     scrollbar-color: rgba(0,0,0,0.2) #f5f5f5;
     scrollbar-width: thin;
     -webkit-transition: -webkit-transform 0.35s ease-in-out;

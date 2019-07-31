@@ -27,7 +27,7 @@ $(document).ready(function () {
         $(this).ekkoLightbox();
     });
 
-    $(".docs-sidebar-toggler").on("click", function (e) {
-        $(".doc-menu").toggle(100);
+    $(".doc-sidebar-toggler").on("click", function (e) {
+        $(".doc-sidebar").toggle(100);
     })
 });

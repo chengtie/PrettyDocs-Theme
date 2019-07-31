@@ -242,12 +242,9 @@ select {
   color: rgba(255, 255, 255, 0.85);
   border-top: 5px solid #40babd;
   padding: 30px 0;
-  position: -webkit-sticky;
-  position: sticky;
   z-index: 100;
   display: flex;
   justify-content: center;
-  top: 0;
 }
 
 .header a {
@@ -1462,20 +1459,16 @@ select {
   }
 } 
 
-.doc-menu-switch {
-  display: none;
-}
-
 .doc-menu {
   top: 129px;
 }
 
-.icon-doc-menu-switch {
+.div-doc-sidebar-toggler {
   width: 56px;
   display: none;
 }
 
-.docs-sidebar-toggler {
+.doc-sidebar-toggler {
   padding-left: 10px;
   background-color: #494d55;
   border-width: 0px;
@@ -1485,7 +1478,7 @@ select {
   margin: auto;
 }
 
-.docs-sidebar-toggler span {
+.doc-sidebar-toggler span {
   display: block;
   background-color: white;
   height: 3px;
@@ -1502,20 +1495,27 @@ select {
 
 @media (max-width: 767.98px) {
   .doc-menu {
-    height: 100vh;
+    top: 0px;
+  }
+
+  .doc-sidebar {
     width: 50%;
-    z-index: 100;
     position: fixed;
-    left: 0;
     top: 129px;
-    background-color: white;
+    z-index: 100;
+    height: calc(100% - 129px);
+    background: #fff;
+    overflow-y: auto;
+    scrollbar-color: rgba(0,0,0,0.2) #f5f5f5;
+    scrollbar-width: thin;
+    -webkit-transition: -webkit-transform 0.35s ease-in-out;
+    transition: -webkit-transform 0.35s ease-in-out;
+    transition: transform 0.35s ease-in-out;
+    transition: transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+    box-shadow: 1px 0 5px 0 rgba(0,0,0,0.1);
   }
 
-  .doc-menu-switch {
-    display: block;
-  }
-
-  .icon-doc-menu-switch{
+  .div-doc-sidebar-toggler{
     display: inline-block;
   }
 
@@ -1526,7 +1526,8 @@ select {
 }
 
 @media (max-width: 576px) {
-  .doc-menu {
+  .doc-sidebar {
     top: 184px;
+    height: calc(100% - 184px);
   }
 }

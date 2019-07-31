@@ -244,7 +244,7 @@ select {
   border-top: 5px solid #40babd;
   position: fixed;
   padding: 30px 0;
-  z-index: 100;
+  z-index: 150;
   display: flex;
   justify-content: center;
 }

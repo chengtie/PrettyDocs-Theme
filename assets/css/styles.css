@@ -1501,6 +1501,7 @@ select {
   }
 
   .doc-sidebar {
+    display: none;
     width: 50%;
     position: fixed;
     top: 129px;
